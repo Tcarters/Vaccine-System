@@ -60,7 +60,7 @@ exports.summary = async (req, res) => {
 //            }
         });
 
-        // get Lates vaacine Lot 
+        // get Latest vaccine Lot 
         const latestVaccineLot = await VaccineLot.find({}).sort('-createdAt').limit(4).populate('vaccine');
 
         // count user who has one vaccine dose

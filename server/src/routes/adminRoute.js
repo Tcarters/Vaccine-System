@@ -11,4 +11,11 @@ router.get(
     adminController.summary
 )
 
+router.post(
+    '/check-token',
+    tokenHandler.verifyAdminToken,
+    (req, res) => {
+        res.status(200).json('Authorized');
+    }
+)
 module.exports = router;
