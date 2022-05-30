@@ -51,14 +51,14 @@ const AppLayout = () => {
    
           </Box>
 
-          <Box px={{ xs: 1, sm: 10 }}
-        py={{ xs: 1, sm: 10 }}
+          <Box px={{ xs: 1, sm: 1 }}
+        py={{ xs: 1, sm: 1 }}
         bgcolor="text.secondary"
         color="white"
           
           >
             my footer
-            <Footer/>
+            {/* <Footer/> */}
           </Box>
           
         </Box>

@@ -5,7 +5,7 @@ import '@fontsource/roboto/700.css';
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Login, AppLayout, Dashboard, Home, Patients } from './pages';
+import { Login, AppLayout, Dashboard, Home, Patients, PatientCreate } from './pages';
 
 const App = () => {
     return(
@@ -18,6 +18,7 @@ const App = () => {
 
                       <Route path='dashboard'  element={<Dashboard />} />
                       <Route path='patients' element={<Patients/>} />
+                      <Route path='patients/create' element={<PatientCreate/>} />
 
                 </Route>
                 App 
