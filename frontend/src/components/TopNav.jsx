@@ -21,6 +21,7 @@ const TopNav = () => {
                 backgroundColor: colors.common.white,
                 color: colors.common.black,
                 zIndex: theme.zIndex.drawer + 1,
+                // yIndex: theme.yIndex.drawer + 1 ,
                 boxShadow: '0px 1px 4px 1px rgb(0 0 0 / 12%)'
             }}
             elevation={0}
@@ -58,7 +59,7 @@ const TopNav = () => {
                             aria-label='logout'
                             sx={{ color: colors.blue['800']}}
                             component={Link}
-                            to="/admin/logout"
+                            to="/login"
                             onClick={ () => logout(navigate) }
                         >
 

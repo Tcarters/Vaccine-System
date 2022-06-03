@@ -86,10 +86,10 @@ exports.update = async (req, res) => {
     
         try {
             let user = await User.findOne({ phoneNumber: phoneNumber });
-             if (user) return res.status(403).json('Phone number already registred for another account');
+             if (user && user._id.toString() !== req.params.id ) return res.status(403).json('Phone number already registred for another account');
     
              user = await User.findOne({idNumber: idNumber});
-             if (user) return res.status(403).json('Id number already registred for another account');
+             if (user && user._id.toString() !== req.params.id ) return res.status(403).json('Id number already registred for another account');
 
             const updateUser = await User.findByIdAndUpdate(
                 req.params.id,

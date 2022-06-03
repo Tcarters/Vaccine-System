@@ -5,7 +5,10 @@ import '@fontsource/roboto/700.css';
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Login, AppLayout, Dashboard, Home, Patients, PatientCreate } from './pages';
+import { Login, AppLayout, Dashboard, Home,
+         Patients, PatientCreate, PatientDetail, 
+         Vaccine, VaccineDetail, Place,
+         PlaceDetail, QRScan } from './pages';
 
 const App = () => {
     return(
@@ -19,6 +22,12 @@ const App = () => {
                       <Route path='dashboard'  element={<Dashboard />} />
                       <Route path='patients' element={<Patients/>} />
                       <Route path='patients/create' element={<PatientCreate/>} />
+                      <Route path='patients/:id' element={<PatientDetail/>} />
+                      <Route path='vaccine' element={<Vaccine/>} />
+                      <Route path='vaccine/:id' element={<VaccineDetail/>} />
+                      <Route path='place' element={<Place/>} />
+                      <Route path='place/:id' element={<PlaceDetail /> }/>
+                      <Route path='qr-scan' element={<QRScan/>} />
 
                 </Route>
                 App 

@@ -20,7 +20,7 @@ const sideBarItems = [
     },
     {
         text: 'Place',
-        path: '/admin/places',
+        path: '/admin/place',
         icon: <PlaceOutlinedIcon />
     },
     {
@@ -37,7 +37,7 @@ const sideBarItems = [
 
 const SideBar = () => {
     const location = useLocation()
-    const sideBarWidth = 300
+    const sideBarWidth = 240
     const [activeIndex, setActiveIndex] = useState(0)
 
 
@@ -62,7 +62,8 @@ const SideBar = () => {
                     boxSizing: 'border-box',
                     width: sideBarWidth,
                     backgroundColor: colors.yellow['800'],
-                    borderRight: 0
+                    borderRight: 0,
+                
                 }
             }}
             open={ true }
@@ -82,16 +83,16 @@ const SideBar = () => {
                             margin: '5px auto',
                             borderRadius: '10px',
                             '&.Mui-selected': {
-                                color: colors.lightBlue['A700']
+                                color: colors.red['A700']
                             },
                             '&.Mui-selected:hover': {
-                                backgroundColor: colors.blue['900']
+                                backgroundColor: colors.blue['600']
                             }
                         }}
                     >
                         <ListItemIcon sx={{
                             color: index === activeIndex && colors.blue['A700'],
-                            fontWeight: '800'
+                            // fontWeight: '800'
 
                             // width: '450'
                         }}>
@@ -103,8 +104,9 @@ const SideBar = () => {
                                 primary={item.text}
                                 sx={{
                                     '& span' : {
-                                        fontWeight: index === activeIndex && '600'
-                                    }
+                                        fontWeight: index === activeIndex && '500'
+                                    },
+                                    // backgroundColor: colors.brown[400]
                                 }}
                         />
                     </ListItemButton>

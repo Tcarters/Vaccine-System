@@ -82,7 +82,7 @@ const Patients = () => {
     },
 
     {
-      field: 'address', headerName: 'Address ', flex: 1
+      field: 'address', headerName: 'Location ', flex: 1
     },
     {
       field: 'id',

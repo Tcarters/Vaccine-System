@@ -45,7 +45,7 @@ exports.getOne = async (req, res) => {
                 createdAt: {
                     $gt: new Date(Date.now() - 24*60*60*1000)
                 }
-            });
+            }).populate('user');
         place._doc.userVisitLast24h = userVisitLast24h;
     
         res.status(200).json(place);

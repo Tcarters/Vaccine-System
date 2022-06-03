@@ -47,7 +47,7 @@ const Login = () => {
       const res = await authApi.login(params)
       localStorage.setItem('token', res.token)
       setOnSubmit(false)
-      navigate('/')
+      navigate('/admin/dashboard')
 
     } catch(error) {
       // console.log('Error submit login', error.response.data)

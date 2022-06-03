@@ -3,6 +3,7 @@ import { isAuthenticated } from '../handlers/authHandler'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { Loading, SideBar, TopNav, Footer } from '../components'
 import { Box, colors, Toolbar } from '@mui/material'
+import CopyrightOutlinedIcon from '@mui/icons-material/CopyrightOutlined';
 
 
 const AppLayout = () => {
@@ -51,21 +52,30 @@ const AppLayout = () => {
    
           </Box>
 
-          <Box px={{ xs: 1, sm: 1 }}
-        py={{ xs: 1, sm: 1 }}
-        bgcolor="text.secondary"
-        color="white"
-          
+          {/* <Box 
+              px={{ xs: 1, sm: 1 }}
+              py={{ xs: 1, sm: 1 }}
+              backgroundColor="grey"
+              // color="success"
+              textAlign='center'
+              alignContent='center'
+              justifyContent='center'
           >
-            my footer
-            {/* <Footer/> */}
+            <span alignContent='right'> 
+                Made with ❤️ by Tdmund |  Copyright  
+                <CopyrightOutlinedIcon sx={{ fontSize: '20px' , color: colors.yellow['400'] }}
+                /> 2022
+            </span> 
+          </Box> */}
+          <Box>
+            <Footer />
           </Box>
-          
-        </Box>
 
-      
+        </Box>      
     )
-    
+              // <>
+              //    <Footer />  </>
+
     
   ) 
 }
