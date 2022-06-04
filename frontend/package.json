@@ -27,12 +27,17 @@
     "react-qr-code": "^2.0.7",
     "react-qr-reader": "^2.2.1",
     "react-qr-scanner": "^1.0.0-alpha.8",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-transition-group": "^4.4.2",
+    "sass": "^1.52.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
+    "react-app-rewire-scss-loaders": "^0.1.3",
+    "react-app-rewired": "^2.2.1",
     "vite": "^2.9.9"
   }
 }

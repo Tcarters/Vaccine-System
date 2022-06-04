@@ -59,7 +59,7 @@ const TopNav = () => {
                             aria-label='logout'
                             sx={{ color: colors.blue['800']}}
                             component={Link}
-                            to="/login"
+                            to="/"
                             onClick={ () => logout(navigate) }
                         >
 

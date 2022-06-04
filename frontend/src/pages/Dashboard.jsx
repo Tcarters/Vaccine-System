@@ -18,7 +18,7 @@ const Dashboard = () => {
     const getData = async () => {
       try {
         const res = await adminApi.getSummary()
-        console.log('Ans of res',res)
+        // console.log('Ans of res',res)
         setSummaryData(res)
       }catch(err) {
         console.log('Error while get Ans:', err)
@@ -41,7 +41,7 @@ const Dashboard = () => {
                   {
                     summaryData && <SummaryInfo
                       title='Total Patients'
-                      number={summaryData.totalUser } //.toLocalString('de-DE')}
+                      number={summaryData.totalUser.toLocaleString('de-DE')}
                       icon={<PersonOutlinedIcon
                               sx={{ fontsize: '195rem' }}
                               color='warning'
@@ -60,7 +60,7 @@ const Dashboard = () => {
                 {
                     summaryData && <SummaryInfo
                       title='Patient  Vaccinated'
-                      number={summaryData.userVaccinated} //.toLocalString('de-DE')}
+                      number={summaryData.userVaccinated.toLocaleString('de-DE')}
                       icon={<VerifiedUserOutlinedIcon
                               sx={{ fontsize: '100px' }}
                               color='success'
@@ -80,7 +80,7 @@ const Dashboard = () => {
                 {
                     summaryData && <SummaryInfo
                       title='Available vaccine dose'
-                      number={summaryData.availableVaccineDose} //.toLocalString('de-DE')}
+                      number={summaryData.availableVaccineDose.toLocaleString('de-DE')}
                       icon={<AddModeratorOutlinedIcon
                               sx={{ fontsize: '13rem' }}
                               color='primary'
@@ -100,7 +100,7 @@ const Dashboard = () => {
                 {
                     summaryData && <SummaryInfo
                       title='Total Places '
-                      number={summaryData.totalPlace} //.toLocalString('de-DE')}
+                      number={summaryData.totalPlace.toLocaleString('de-DE')}
                       icon={<RoomOutlinedIcon
                               sx={{ fontsize: '13rem' }}
                               color='error'
@@ -168,8 +168,6 @@ const Dashboard = () => {
       </div>
 
           
-     
-        Dashboard
         {/* <Footer /> */}
 
       
@@ -270,8 +268,8 @@ const LatestVaccineLotTable = ({ list }) => {
     {
       field: 'vaccine', headerName: 'Vaccine ', width: 200,
       // valueGetter: (params) =>  `${params.value.name}` //console.log('Me:', (params.value && `${params.value.name}`)  ),
-      renderCell: (params) => {  return params.value ? `${params.value.name}` :  'Empty'; 
-      console.log(params)}
+      renderCell: (params) => {  return params.value ? `${params.value.name}` :  'Empty'} 
+      //console.log(params)}
         
     },
     {

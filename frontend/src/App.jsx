@@ -8,14 +8,14 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Login, AppLayout, Dashboard, Home,
          Patients, PatientCreate, PatientDetail, 
          Vaccine, VaccineDetail, Place,
-         PlaceDetail, QRScan } from './pages';
+         PlaceDetail, QRScan, NotFound } from './pages';
 
 const App = () => {
     return(
 
         <BrowserRouter>
             <Routes>
-                <Route path='login' element={<Login/>} />
+                <Route exact path='/' element={<Login/>} />
                 <Route path='home' element={<Home />} />
                 <Route path='admin' element={<AppLayout />}>
 
@@ -30,6 +30,7 @@ const App = () => {
                       <Route path='qr-scan' element={<QRScan/>} />
 
                 </Route>
+                <Route path="*" element={<NotFound/>}/>
                 App 
             </Routes>
         

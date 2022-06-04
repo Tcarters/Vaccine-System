@@ -44,8 +44,8 @@ const Footer = () => {
                 {" by Tdmund. "}
 
                 <Box align='center'>
-                    <LinkedInIcon  sx={{ color: colors.blue[600] }} />
-                    <TwitterIcon sx={{ color: colors.blue[600] }} />
+                    <LinkedInIcon  sx={{ color: colors.grey[900] }} />
+                    <TwitterIcon sx={{ color: colors.grey[900] }} />
                     <GitHubIcon />
                 </Box>
             </Typography>
