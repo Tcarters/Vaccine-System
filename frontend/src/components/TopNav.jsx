@@ -52,14 +52,14 @@ const TopNav = () => {
                             alt="User image"
                             src={avtImage}
                             sx={{ height: '30px', width: '30px' }}
-                            component={Link}
-                            to="/admin/profile"
+                            // component={Link}
+                            // to="/admin/profile"
                             />
                         <IconButton
                             aria-label='logout'
                             sx={{ color: colors.blue['800']}}
                             component={Link}
-                            to="/"
+                            to="/login"
                             onClick={ () => logout(navigate) }
                         >
 

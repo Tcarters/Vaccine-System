@@ -45,7 +45,7 @@ const PatientDetail = () => {
         } 
         let aEL = document.createElement("a")
             aEL.href= imgURL
-            aEL.download = "QR_code.png"
+            aEL.download = "qr_code.png"
             document.body.appendChild(aEL)
             aEL.click()
             document.body.removeChild(aEL)
@@ -69,12 +69,12 @@ const PatientDetail = () => {
     // const downloadQR = async () => {
     //     const canvas = document.getElementById('qrcode')
     //     //.querySelector('canvas')
-    //     console.log('Data canvas:', canvas.current, )
-    //     const pngUrl = await canvas.current?.toDataURL()
+    //     console.log('Data canvas:', canvas, )
+    //     // const pngUrl = await canvas?.toDataURL()
     //      //("image/png")
     //     //   .replace("image/png", "image/octet-stream");
         
-    //      console.log('URL:', QRCode.toDataURL() )
+    //      console.log('URL:', QRCode2.toDataURL() )
     //     let downloadLink = document.createElement("a");
     //     downloadLink.href = pngUrl;
     //     downloadLink.download = "qrcode.png";
@@ -133,7 +133,19 @@ const PatientDetail = () => {
                                 patient && 
                                 
                                  <Grid item xs={2}>
-                                         <Fab onClick={ () => generateImg()} style={{marginLeft:10}} color="primary">
+                                         <Fab onClick={ () => generateImg() 
+                                          //?  `<a href=${imgURL} download="qr.png"><img src=${imgURL} alt="png" /></a>` : null
+                                            //generateImg() &&
+                                                
+                                                    // <>
+                                                    //   imgURL ? (
+                                                    //     <a href={imgURL} download="qrcode.png">
+                                                    //         <img src={imgURL} alt="png"></img>
+                                                    //     </a> ) : null
+                                                    // </>  
+                                            } 
+                                              style={{marginLeft:10}} 
+                                              color="primary">
                                              <GetApp/>
                                          </Fab>
                                     {/* { 

@@ -101,7 +101,7 @@ class NotFoundClass extends Component {
                         {state => (
                         <div className="error-text flex justifyCenter">
                             <h3>Oops… Looks like you got lost</h3>
-                            <a href="/">GO HOME</a>
+                            <a href="#">GO BACK</a>
                         </div>
                         )}
                     </CSSTransition>

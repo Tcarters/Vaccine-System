@@ -22,7 +22,7 @@ const Patients = () => {
       try {
         const res = await userApi.getAll()
         setPatientList(res)
-        console.log('All Patients ', res )
+        // console.log('All Patients ', res )
 
       } catch(err) {
         console.log('Error get Patients: ', err)

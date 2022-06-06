@@ -32,7 +32,7 @@ const QRScan = () => {
                     try {
                         setOnLoadPatient(true)
                         const res = await userApi.getOne(data)
-                        console.log('Ans:', res)
+                        // console.log('Ans:', res)
                         setPatient(res)
 
                     } catch(err) {

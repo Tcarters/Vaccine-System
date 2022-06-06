@@ -13,7 +13,7 @@ const Place = () => {
         const getPlaces = async() => {
             try {
                 const  res = await placeApi.getAll()
-                console.log('Got res:', res )
+                // console.log('Got res:', res )
                 setPlaceList(res)
             } catch (err) {
                 console.log('Error gotALL places:', err)

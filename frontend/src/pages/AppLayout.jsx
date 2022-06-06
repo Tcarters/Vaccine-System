@@ -67,15 +67,13 @@ const AppLayout = () => {
                 /> 2022
             </span> 
           </Box> */}
-          <Box>
+          
+
             <Footer />
-          </Box>
-
-        </Box>      
+        </Box>    
+        
+        
     )
-              // <>
-              //    <Footer />  </>
-
     
   ) 
 }

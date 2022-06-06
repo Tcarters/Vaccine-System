@@ -15,7 +15,7 @@ const App = () => {
 
         <BrowserRouter>
             <Routes>
-                <Route exact path='/' element={<Login/>} />
+                <Route exact path='/login' element={<Login/>} />
                 <Route path='home' element={<Home />} />
                 <Route path='admin' element={<AppLayout />}>
 
@@ -30,7 +30,7 @@ const App = () => {
                       <Route path='qr-scan' element={<QRScan/>} />
 
                 </Route>
-                <Route path="*" element={<NotFound/>}/>
+                <Route path='*' element={<NotFound/>}/>
                 App 
             </Routes>
         

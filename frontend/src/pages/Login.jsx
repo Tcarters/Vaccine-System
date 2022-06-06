@@ -100,7 +100,7 @@ const Login = () => {
                             mb='4rem'
                             fontWeight='600'
                             >
-                              VACCINE MANAGEMENT WEBAPP 
+                              VACCINE MANAGEMENT SYSTEM 
                         </Typography>
 
                         <FormControl fullWidth>

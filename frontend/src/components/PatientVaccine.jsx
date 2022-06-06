@@ -11,7 +11,7 @@ import CustomDialog from './CustomDialog'
 
 const PatientVaccine = ({patient}) => {
 
-  console.log('Data patient', patient )
+  // console.log('Data patient', patient )
   const [patientVaccines, setPatientVaccines] = useState(patient.vaccinated)
   const [vaccineList, setVaccineList] = useState([])
   const [vaccineLots, setVaccineLots] = useState([])

@@ -83,10 +83,14 @@ const SideBar = () => {
                             margin: '5px auto',
                             borderRadius: '10px',
                             '&.Mui-selected': {
-                                color: colors.red['A700']
+                                // backgroundColor: 'green',
+                                color: colors.blue['A900']
                             },
                             '&.Mui-selected:hover': {
-                                backgroundColor: colors.blue['600']
+                                backgroundColor: colors.blue['300'],
+                                // '&&.hover': {
+                                //     backgroundColor: 'green'
+                                // }
                             }
                         }}
                     >

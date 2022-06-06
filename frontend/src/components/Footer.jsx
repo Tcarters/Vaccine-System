@@ -13,45 +13,49 @@ import { useTheme } from '@mui/material/styles'
 const Footer = () => {
   const theme= useTheme()
   return (
+    <>
+        <AppBar
+        position="static"  //"fixed"
+        sx={{ top: 'auto', bottom: 0  }}
+        elevation={2}
+        >
+          {/* <Toolbar> */}
+          
+          {/* align='center'> */}
+                <Typography 
+                    component='div'
+                    sx= {{ backgroundColor:  colors.grey[700]  }}
+                    // px= {{ xs: 1, sm: 3 }}
+                    py={{ xs: 1, sm: 0 }}
+                    variant="body2"
+                    color="black"
+                    align="center"
+                  >
+                    {/* {"Copyright © "} */}
+                    
+                    {/* { "Made with ❤️ by Tdmund  } */}
+                    { " Copyright " }
 
-    <AppBar
-    position="fixed"
-    sx={{ top: 'auto', bottom: 0  }}
-    elevation={2}
-    >
-      {/* <Toolbar align='center'> */}
-            <Typography 
-                sx= {{ backgroundColor:  colors.grey[700]  }}
-                // px= {{ xs: 1, sm: 3 }}
-                py={{ xs: 1, sm: 0 }}
-                variant="body2"
-                color="black"
-                align="center"
-              >
-                {/* {"Copyright © "} */}
-                
-                {/* { "Made with ❤️ by Tdmund  } */}
-                { " Copyright " }
+                    <CopyrightOutlinedIcon  sx= {{ fontSize: '15px' }} />
+                    
+                    {new Date().getFullYear()}
+                    {"."}
 
-                <CopyrightOutlinedIcon  sx= {{ fontSize: '15px' }} />
-                
-                {new Date().getFullYear()}
-                {"."}
+                    {"    "} { "  "} { "|  Made with "}
+                    {/* <FavoriteBorderOutlinedIcon  sx={{ color: colors.red[600] }} /> */}
+                    <FavoriteIcon sx={{ color: colors.red[400], fontSize: '20px' }} />
+                    {" by Tdmund. "}
 
-                {"    "} { "  "} { "|  Made with "}
-                {/* <FavoriteBorderOutlinedIcon  sx={{ color: colors.red[600] }} /> */}
-                <FavoriteIcon sx={{ color: colors.red[400], fontSize: '20px' }} />
-                {" by Tdmund. "}
+                    <Box align='center'>
+                        <LinkedInIcon  sx={{ color: colors.grey[900] }} />
+                        <TwitterIcon sx={{ color: colors.grey[900] }} />
+                        <GitHubIcon />
+                    </Box>
+                </Typography>
 
-                <Box align='center'>
-                    <LinkedInIcon  sx={{ color: colors.grey[900] }} />
-                    <TwitterIcon sx={{ color: colors.grey[900] }} />
-                    <GitHubIcon />
-                </Box>
-            </Typography>
-        {/* </Toolbar> */}
-    </AppBar>
-      
+             {/* </Toolbar> */}
+        </AppBar>
+  </>      
 
   )
 }

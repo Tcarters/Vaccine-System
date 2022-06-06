@@ -26,7 +26,7 @@ const VaccineDetail = () => {
         const getVaccine = async () => {
             try {
                 const res = await vaccineApi.getOne(id)
-                console.log('ans:', res)
+                // console.log('ans:', res)
                 setVaccine(res)
                 setName(res.name)
                 setQuantity(res.quantity)
