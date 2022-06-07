@@ -9,13 +9,13 @@ const { placeController } = require('../controllers')
 
 router.post(
   '/',
-  tokenHandler.verifyToken,
+  // tokenHandler.verifyToken,
   placeController.create
 );
 
 router.get(
     '/',
-    tokenHandler.verifyToken,
+    // tokenHandler.verifyToken,
     placeController.getAll
   );
 

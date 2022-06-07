@@ -5,7 +5,7 @@ import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined'
 import { useTheme } from '@mui/material/styles'
 import { useNavigate, Link, useLocation } from 'react-router-dom'
 import { logout } from '../handlers/authHandler'
-import avtImage from '../assets/images/noAvatar.png'
+import avtImage from '../assets/images/admin.jpg'
 import { AppBar, colors, IconButton, Stack, Toolbar, Typography, Avatar } from '@mui/material'
 
 
@@ -59,7 +59,7 @@ const TopNav = () => {
                             aria-label='logout'
                             sx={{ color: colors.blue['800']}}
                             component={Link}
-                            to="/login"
+                            to="/"
                             onClick={ () => logout(navigate) }
                         >
 
@@ -72,7 +72,7 @@ const TopNav = () => {
 
                 </Toolbar>
             </AppBar>
-    // <div>TopNav</div>
+
   )
 }
 
