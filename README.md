@@ -28,11 +28,26 @@ A Project build in the Context of my School Internship.
 
 
 
+2. Login Page
+
+![loginP](https://user-images.githubusercontent.com/71230412/173120609-97a5faf2-a5ad-432e-8a28-a79edb45ac8a.png)
 
 
 
 
 3. Dashboard
 
+
 ![dashboard](https://user-images.githubusercontent.com/71230412/173111049-c4344151-a4d7-46a0-9644-3c12b96befdc.png)
+
+
+
+4. Qr-Scan Page
+
+
+![loginP](https://user-images.githubusercontent.com/71230412/173120717-705cafbd-8ba8-4230-afaa-2de8f8317e41.png)
+
+
+
+6. 
 
