@@ -45,8 +45,8 @@ A Project build in the Context of my School Internship.
 4. Qr-Scan Page
 
 
-![loginP](https://user-images.githubusercontent.com/71230412/173120717-705cafbd-8ba8-4230-afaa-2de8f8317e41.png)
 
+![qr-ScanPage](https://user-images.githubusercontent.com/71230412/173120857-16fa7464-3c17-430f-a266-6268aa0c0360.png)
 
 
 6. 
