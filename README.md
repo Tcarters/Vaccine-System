@@ -18,3 +18,21 @@ A Project build in the Context of my School Internship.
 
 
 <img width="498" alt="case-diagram" src="https://user-images.githubusercontent.com/71230412/173109554-18bc7dd9-b614-4efb-9ab3-17174b0a3a99.PNG">
+
+
+### OUTPUTS
+
+1. Home Page
+
+![homePage](https://user-images.githubusercontent.com/71230412/173111356-88822abb-241c-4350-aad5-76b213fa2476.png)
+
+
+
+
+
+
+
+3. Dashboard
+
+![dashboard](https://user-images.githubusercontent.com/71230412/173111049-c4344151-a4d7-46a0-9644-3c12b96befdc.png)
+
