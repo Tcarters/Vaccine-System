@@ -1,6 +1,12 @@
 # Vaccine-System
 A Project build in the Context of my School Internship.
 
+**Backend setting up**
+ ##### mkdir server
+##### npx install express-generator –no-view
+##### yarn install
+##### yarn add cors crypto-js dotenv jsonwebtoken mongoose nodemon
+
 
 ## ERD Diagram
 
