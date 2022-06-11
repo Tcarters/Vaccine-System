@@ -65,5 +65,3 @@ A Project build in the Context of my School Internship.
 ![qr-ScanPage](https://user-images.githubusercontent.com/71230412/173120857-16fa7464-3c17-430f-a266-6268aa0c0360.png)
 
 
-6. 
-
