@@ -1,11 +1,21 @@
-# Vaccine-System
+# Vaccine-Management-System
 A Project build in the Context of my School Internship.
 
 **Backend setting up**
  ##### mkdir server
-##### npx install express-generator –no-view
-##### yarn install
-##### yarn add cors crypto-js dotenv jsonwebtoken mongoose nodemon
+ ##### npx install express-generator –no-view
+ ##### yarn install
+ ##### yarn add cors crypto-js dotenv jsonwebtoken mongoose nodemon
+ 
+ **Frontend Setting Up**
+ 
+ #### mkdir frontend
+ #### yarn create vite
+ #### yarn install
+ #### yarn add @mui/material @emotion/react @emotion/styled @mui/lab
+ #### @mui/x-data-grid @fontsource/roboto @mui/icons-material react-
+ #### chartjs-2 charts.js react-qr-code react-qr-reader axios moment query-
+ #### string react-router-dom
 
 
 ## ERD Diagram
